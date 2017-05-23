@@ -68,10 +68,10 @@ var selectedRow = 0
                 if let actorArray = jsonObj!.value(forKey: "result") as? NSArray {
                     for actor in actorArray{
                         if let actorDict = actor as? NSDictionary {
-                            if let name = actorDict.value(forKey: "Username") {
+                            if let name = actorDict.value(forKey: "CHNEEL_NAME") {
                                 self.TVNames.append(name as! String)
                             }
-                            if let name = actorDict.value(forKey: "Cell") {
+                            if let name = actorDict.value(forKey: "CHNEEL_URL") {
                                 self.CellArray.append(name as! String)
                             }
                             
@@ -89,12 +89,12 @@ var selectedRow = 0
    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let output = okName[indexPath.row]
+        let output = CellArray[indexPath.row]
         
        
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "FullChaneelView") as! FullChaneelViewController
-        vc.Belal = okName[indexPath.row]
+        vc.Belal = CellArray[indexPath.row]
     
                 self.navigationController?.pushViewController(vc, animated: true)
 
