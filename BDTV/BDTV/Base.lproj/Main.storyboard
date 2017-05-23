@@ -32,20 +32,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="95" height="115"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jamuna TV" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RI-tb-Fep">
-                                            <rect key="frame" x="0.0" y="0.0" width="95" height="115"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sony8" translatesAutoresizingMaskIntoConstraints="NO" id="uxm-ac-4P8">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="115"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.0" green="0.59215079699999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        </imageView>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="TVNameLabel" destination="7RI-tb-Fep" id="DlR-HZ-BLk"/>
-                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -59,7 +52,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Jp-Nf-N55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="-236"/>
+            <point key="canvasLocation" x="918.75" y="-236.61971830985917"/>
         </scene>
         <!--Full Chaneel View Controller-->
         <scene sceneID="2Ic-9g-5y0">
@@ -116,4 +109,7 @@
             <point key="canvasLocation" x="-54" y="-130"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sony8" width="900" height="900"/>
+    </resources>
 </document>
