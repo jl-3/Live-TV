@@ -32,13 +32,16 @@
                                     <rect key="frame" x="0.0" y="0.0" width="95" height="115"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sonysix" translatesAutoresizingMaskIntoConstraints="NO" id="uxm-ac-4P8">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sonysix" translatesAutoresizingMaskIntoConstraints="NO" id="uxm-ac-4P8">
                                             <rect key="frame" x="0.0" y="0.0" width="103" height="115"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="ChaneelImageView" destination="uxm-ac-4P8" id="UNg-vo-uK4"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

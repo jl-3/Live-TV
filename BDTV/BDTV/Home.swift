@@ -16,7 +16,7 @@ class Home: UICollectionViewController {
     
     
     
-    var TVImages = [UIImage (named: "setmax"),UIImage (named: "setsony") ]
+    var TVImages = [UIImage (named: "71"),UIImage (named: "asian"),UIImage (named: "banglavision"),UIImage (named: "bijoytv"),UIImage (named: "btb"),UIImage (named: "channeli"),UIImage (named: "images"),UIImage (named: "independent"),UIImage (named: "jalshamovies"),UIImage (named: "jumunatv"),UIImage (named: "LifeOK"),UIImage (named: "satv"),UIImage (named: "satv"),UIImage (named: "setmax"),UIImage (named: "somoytv"),UIImage (named: "sonysab"),UIImage (named: "sonysix"),UIImage (named: "starjalsha"),UIImage (named: "starplus") ]
     
 
     
@@ -54,6 +54,8 @@ var selectedRow = 0
         cell.layer.masksToBounds = true
         cell.layer.borderWidth = 1
        cell.layer.borderColor = UIColor.black.cgColor
+        cell.ChaneelImageView.image = TVImages[indexPath.row]
+        
         
         return cell
     }
