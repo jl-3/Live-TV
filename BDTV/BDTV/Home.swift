@@ -16,10 +16,9 @@ class Home: UICollectionViewController {
     
     
     
-    //var TVImages = [UIImage (named: "MohunaTV"),UIImage (named: "jamunaTV"),UIImage (named: "GanBangla TV"),UIImage (named: "chaneeli"),UIImage (named: "chaneel24"),UIImage (named: "bijoytv"),UIImage (named: "banglavisiontv"),UIImage (named: "atntv"),UIImage (named: "ATNNews"),UIImage (named: "RTV Music"),UIImage (named: "rtv"),UIImage (named: "satv"),UIImage (named: "somoytv"),UIImage (named: "TBN24RV") ]
+    var TVImages = [UIImage (named: "setmax"),UIImage (named: "setsony") ]
     
-    
-    var okName = ["https://www.google.com/","http://10.1.1.1:8080/English%20TV%20Series/Animater%20TV%20Series/Hentai%20Ouji%20to%20Warawanai%20Neko%20720p/[SushiKushi]%20Hentai%20Ouji%20to%20Warawanai%20Neko%20-%2001%20[720p].mp4","https://www.youtube.com/watch?v=apt8KjklJGY","Chaneel 24","Bijoy TV","Bangla Vision","ATN TV","ATN News","R TV","Somoy TV","TBN 24 TV","SA TV","Mohuna TV"]
+
     
     var TVNames = [String]()
     var CellArray = [String]()
@@ -51,8 +50,10 @@ var selectedRow = 0
         
      
     
-        cell.layer.cornerRadius = 8
+        cell.layer.cornerRadius = 5
         cell.layer.masksToBounds = true
+        cell.layer.borderWidth = 1
+       cell.layer.borderColor = UIColor.black.cgColor
         
         return cell
     }
@@ -87,7 +88,7 @@ var selectedRow = 0
    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let output = CellArray[indexPath.row]
+       
         
        
         

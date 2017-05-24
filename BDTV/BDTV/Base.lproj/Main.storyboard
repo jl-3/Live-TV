@@ -13,10 +13,10 @@
         <scene sceneID="cvE-dU-5NI">
             <objects>
                 <collectionViewController id="B5n-fP-wMa" customClass="Home" customModule="BDTV" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Oxg-lM-ZPT">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Oxg-lM-ZPT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="scrollIndicatorInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="Fez-Xg-5pr">
                             <size key="itemSize" width="95" height="115"/>
@@ -32,8 +32,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="95" height="115"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sony8" translatesAutoresizingMaskIntoConstraints="NO" id="uxm-ac-4P8">
-                                            <rect key="frame" x="0.0" y="0.0" width="109" height="115"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sonysix" translatesAutoresizingMaskIntoConstraints="NO" id="uxm-ac-4P8">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="115"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -110,6 +110,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="sony8" width="900" height="900"/>
+        <image name="sonysix" width="225" height="225"/>
     </resources>
 </document>
