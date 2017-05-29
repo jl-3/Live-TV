@@ -16,7 +16,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Oxg-lM-ZPT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="scrollIndicatorInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="Fez-Xg-5pr">
                             <size key="itemSize" width="95" height="115"/>
@@ -32,15 +32,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="95" height="115"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="setmax" translatesAutoresizingMaskIntoConstraints="NO" id="iOp-t6-9vx">
-                                            <rect key="frame" x="0.0" y="0.0" width="87" height="79"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sonysix" translatesAutoresizingMaskIntoConstraints="NO" id="uxm-ac-4P8">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="115"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="RfM-RB-Cdz" kind="show" id="LEp-jf-8eM"/>
+                                    <outlet property="ChaneelImageView" destination="uxm-ac-4P8" id="UNg-vo-uK4"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -50,12 +50,23 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="Du2-Ba-rno">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="L6y-8X-73s"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="U4w-vg-rxq">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="ActionAddButton:" destination="B5n-fP-wMa" id="IgH-Ux-VAn"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="L6y-8X-73s">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="ActionRefeshButton:" destination="B5n-fP-wMa" id="Y7u-9k-5iX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Jp-Nf-N55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692" y="-339"/>
+            <point key="canvasLocation" x="690" y="-183"/>
         </scene>
         <!--Full Chaneel View Controller-->
         <scene sceneID="2Ic-9g-5y0">
@@ -70,20 +81,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h4F-Cz-d2I">
-                                <rect key="frame" x="40" y="266" width="201" height="187"/>
+                                <rect key="frame" x="25" y="202" width="279" height="222"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BT1-QU-uSv">
+                                <rect key="frame" x="57" y="39" width="195" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="LabelName" destination="BT1-QU-uSv" id="rX1-s8-QBl"/>
                         <outlet property="WebView" destination="h4F-Cz-d2I" id="UdG-GL-PdX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kVo-EY-4gF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1434.375" y="-339.08450704225351"/>
+            <point key="canvasLocation" x="1661.25" y="-202.81690140845072"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vjt-hv-ZnQ">
@@ -105,6 +124,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="setmax" width="211" height="239"/>
+        <image name="sonysix" width="225" height="225"/>
     </resources>
 </document>

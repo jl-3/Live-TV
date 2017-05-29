@@ -10,6 +10,7 @@ import UIKit
 
 class CollectionViewCellindex: UICollectionViewCell {
     
+    @IBOutlet weak var ChaneelImageView: UIImageView!
     @IBOutlet weak var TVNameLabel: UILabel!
     
     @IBOutlet weak var TVButtonName: UIButton!

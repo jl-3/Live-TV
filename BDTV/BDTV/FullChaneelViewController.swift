@@ -18,7 +18,7 @@ class FullChaneelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-   
+        LabelName.text = ""
         
         
         self.WebView.frame = self.view.bounds
